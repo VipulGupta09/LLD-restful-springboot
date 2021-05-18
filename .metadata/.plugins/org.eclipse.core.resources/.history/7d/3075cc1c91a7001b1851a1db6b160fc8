@@ -1,0 +1,5 @@
+package com.lru.algorithm.storage;
+
+public class HashMapBasedStorage {
+
+}

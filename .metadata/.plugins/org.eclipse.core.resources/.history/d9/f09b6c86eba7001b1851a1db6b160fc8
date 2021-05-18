@@ -1,0 +1,27 @@
+package com.lru.algorithm;
+
+public class DoublyLinkedListNode<E> {
+	DoublyLinkedListNode<E> next;
+	DoublyLinkedListNode<E> prev;
+	E element;
+
+	public DoublyLinkedListNode(E element) {
+		this.element = element;
+		this.next = null;
+		this.prev = null;
+	}
+
+	public void setNext(DoublyLinkedListNode<E> next) {
+		this.next = next;
+	}
+
+	public void setPrev(DoublyLinkedListNode<E> prev) {
+		this.prev = prev;
+	}
+
+	public void setElement(E element) {
+		this.element = element;
+	}
+	
+	
+}

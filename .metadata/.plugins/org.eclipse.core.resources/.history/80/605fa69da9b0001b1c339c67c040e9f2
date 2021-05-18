@@ -1,0 +1,31 @@
+package com.geeks.array;
+
+public class NumberToWord {
+	static String one[] = { "", "one ", "two ", "three ", "four ", "five ", "six ", "seven ", "eight ", "nine ", "ten ",
+			"eleven ", "twelve ", "thirteen ", "fourteen ", "fifteen ", "sixteen ", "seventeen ", "eighteen ",
+			"nineteen " };
+	static String ten[] = { "", "", "twenty ", "thirty ", "forty ", "fifty ", "sixty ", "seventy ", "eighty ",
+			"ninety " };
+
+	public static void main(String[] args) {
+		long n = 438237764;
+		System.out.println(convertToWords(n));
+	}
+
+	public static String convertToWords(long num) {
+		String out = "";
+		
+		return null;
+	}
+	
+	public static String numToWords(int n,String s) {
+		String str = "";
+		if(n>19) {
+			str+=ten[n/10]+one[n%10];
+		}
+		else
+			str+=one[n];
+		return null;
+	}
+
+}

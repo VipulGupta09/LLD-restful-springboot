@@ -1,0 +1,22 @@
+package com.recursion;
+
+public class Solution {
+	static int val = 1;
+	public static void main(String[] args) {
+		
+		System.out.println(print(5));
+	}
+	
+	public static int print(int n) {
+		if(n==0) {
+			//System.out.println(n);
+			return 1;
+		}
+		
+		val=val*n;
+		print(n-1);
+		return val;
+		
+	}
+
+}

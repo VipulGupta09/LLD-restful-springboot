@@ -1,0 +1,21 @@
+package com.geeks.array;
+
+public class FindRepeatingAndMissing {
+
+	public static void main(String[] args) {
+		int arr[] = {4, 3, 6, 2, 1, 1};
+		findNum(arr);
+	}
+	
+	public static void findNum(int arr[]) {
+		
+		for(int i=0;i<arr.length-1;i++) {
+			while(arr[i]!=i+1) {
+				int temp = arr[arr[i]-1];
+				arr[arr[i]-1]=arr[i];
+				arr[i]=temp;
+			}
+		}
+	}
+
+}

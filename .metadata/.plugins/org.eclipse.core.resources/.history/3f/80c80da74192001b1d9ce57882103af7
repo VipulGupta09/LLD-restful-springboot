@@ -1,0 +1,14 @@
+package org.learn.java;
+
+import java.util.Arrays;
+
+public class Test {
+	int val;
+	public static void main(String[] ars) {
+		m();
+	}
+	public void m() {
+		System.out.println(val);
+	}
+
+}

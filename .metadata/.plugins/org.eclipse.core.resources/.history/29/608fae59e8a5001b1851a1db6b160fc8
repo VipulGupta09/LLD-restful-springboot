@@ -1,0 +1,13 @@
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		Float f = 1.0f;
+		Float f1 = 1.0f;
+		
+		Float f2 = f-f1;
+		System.out.println(f2);
+
+	}
+
+}

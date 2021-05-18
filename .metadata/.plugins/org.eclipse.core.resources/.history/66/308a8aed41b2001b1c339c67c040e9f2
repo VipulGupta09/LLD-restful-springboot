@@ -1,0 +1,20 @@
+package com.geeks.array;
+
+public class FindRepeatingNumber {
+
+	public static void main(String[] args) {
+		int arr[]= {4, 2, 4, 5, 2, 3, 1};
+
+	}
+	public static void findRepeating(int arr[]) {
+		for(int i=0;i<arr.length;i++) {
+			if(arr[arr[i]]>0) {
+				arr[arr[i]]=-arr[arr[i]];
+			}
+			else {
+				System.out.println(arr[i]);
+			}
+		}
+	}
+
+}

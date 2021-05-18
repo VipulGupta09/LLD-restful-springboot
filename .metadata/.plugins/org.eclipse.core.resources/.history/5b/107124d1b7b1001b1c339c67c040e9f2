@@ -1,0 +1,28 @@
+package com.geeks.array;
+
+import java.util.PriorityQueue;
+
+public class MinimiseTheMaximumDifferenceBetweenHeights {
+
+	public static void main(String[] args) {
+		int arr[]={1, 5, 10};
+		int k = 6;
+		findDiff(arr, k);
+	}
+	public static void findDiff(int arr[], int k) {
+		PriorityQueue<Integer> queue = new PriorityQueue<Integer>((a,b)->b-a);
+		for(int i:arr) {
+			int add = i+k;
+			int sub = i-k;
+			if(sub>=0)
+				queue.add(sub);
+			queue.add(add);
+		}
+		if(queue.size()>=2) {
+			int max = queue.poll();
+			int min = queue.poll();
+			System.out.println(max-min);
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+package org.learning.designpattern;
+
+/**
+ * Hello world!
+ *
+ */
+public class Singleton {
+	public static final Singleton Instacne = new Singleton();
+
+	private Singleton() {
+
+	}
+
+	public static Singleton getInstance() {
+		return Instacne;
+	}
+
+}

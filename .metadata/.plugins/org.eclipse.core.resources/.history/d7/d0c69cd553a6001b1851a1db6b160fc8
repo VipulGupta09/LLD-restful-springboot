@@ -1,0 +1,29 @@
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		int number = 36;
+		squareRoot(number);
+	}
+	
+	public static void squareRoot(int num) {
+		int start=1,end = num/2;
+		
+		while(start<=end) {
+			int mid = start + (end-start)/2;
+			int root = mid*mid;
+			
+			if(root==num) {
+				System.out.println(mid);
+				break;
+			}
+			else if(root<num) {
+				start = mid+1;
+			}
+			else 
+				end = mid-1;
+		}
+		
+	}
+
+}

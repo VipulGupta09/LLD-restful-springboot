@@ -1,0 +1,10 @@
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		Character ch = (char) (1+'a');
+		System.out.println(ch);
+
+	}
+
+}

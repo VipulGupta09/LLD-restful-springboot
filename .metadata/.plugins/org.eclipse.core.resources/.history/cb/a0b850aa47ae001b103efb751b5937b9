@@ -1,0 +1,27 @@
+package com.geeks.array;
+
+public class SegregatePositiveNegative {
+
+	public static void main(String[] args) {
+		int arr[] = { -12, 11, -13, -5, 6, -7, 5, -3, -6 };
+		rearrage(arr);
+	}
+
+	public static void rearrage(int[] arr) {
+		int i = 0;
+		int j = arr.length - 1;
+		while (true) {
+			while (arr[i] < 0 && i < arr.length)
+				i++;
+			while (arr[j] > 0 && j >= 0)
+				j--;
+			if (j < i) {
+				int temp = arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+			else
+				break;
+		}
+	}
+}

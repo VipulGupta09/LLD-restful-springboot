@@ -1,0 +1,21 @@
+package com.recursion;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		
+		print(7);
+	}
+	
+	public static void print(int n) {
+		if(n==0) {
+			//System.out.println(n);
+			return ;
+		}
+		
+		System.out.println(n);
+		print(n-1);
+		
+	}
+
+}

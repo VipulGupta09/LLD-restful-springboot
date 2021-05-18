@@ -1,0 +1,7 @@
+package org.learn.java;
+
+public class Test {
+	public static void main(String[] ars) {
+		float f = 1_2_3.4_4f;
+	}
+}

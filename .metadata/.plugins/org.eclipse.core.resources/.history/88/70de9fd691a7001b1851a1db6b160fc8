@@ -1,0 +1,5 @@
+package com.lru.algorithm.exception;
+
+public class StorageFullException extends RuntimeException{
+
+}

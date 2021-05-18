@@ -1,0 +1,5 @@
+package com.lru.cache.exception;
+
+public class StorageFullException {
+
+}

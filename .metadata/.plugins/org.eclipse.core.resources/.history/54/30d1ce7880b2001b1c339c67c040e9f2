@@ -1,0 +1,23 @@
+package com.geeks.array;
+
+import java.util.ArrayList;
+
+public class PrintMatrixInSpiralForm {
+
+	public static void main(String[] args) {
+		int mat[][] = { { 1, 2, 3, 4 }, 
+						{ 5, 6, 7, 8 }, 
+						{ 9, 10, 11, 12 }, 
+						{ 13, 14, 15, 16 } };
+		printSpiral(mat);
+	}
+	public static void printSpiral(int[][]mat) {
+		ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
+		int rowFirst = 0,rowLast = mat[0].length-1;
+		int colFirst = mat.length-1,colLast = 0;
+		
+		while(rowFirst!=rowLast && colFirst!=colLast) {
+			
+		}
+	}
+}

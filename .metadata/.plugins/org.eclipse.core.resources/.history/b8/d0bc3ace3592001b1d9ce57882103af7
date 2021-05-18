@@ -1,0 +1,18 @@
+package org.learn.java;
+
+public class Test {
+	public static void main(String[] ars) {
+		int x = 010;
+		
+		System.out.println(x);
+		byte b = 123;
+		byte b1 = 127;
+		
+		short s = 32767;
+		float f = 19.0f;
+		float f1 = 2e3f;
+		float f2 = 0xbee;
+		System.out.println(f2);
+		
+	}
+}

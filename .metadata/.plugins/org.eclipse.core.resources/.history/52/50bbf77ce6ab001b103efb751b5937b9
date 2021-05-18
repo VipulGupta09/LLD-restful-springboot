@@ -1,0 +1,32 @@
+
+public class Solution {
+
+	
+	//Question: Given a number , you need to find the the smallest palindrome largest to that given number
+	
+//	Ip:  125
+//	Op : 131
+	
+	public static void main(String[] args) {
+		int num =  125;
+		
+		for(int i=num+1;i<Integer.MAX_VALUE;i++) {
+			if(isPallindrome(i)) {
+				System.out.println(i);
+				break;
+			}
+		}
+
+	}
+	
+	public static boolean isPallindrome(int num) {
+		String str = String.valueOf(num).toString();
+		StringBuilder sb = new StringBuilder();
+		sb.append(str.toString());
+		if(str.equals(sb.reverse().toString())) {
+			return true;
+		}
+		return false;
+	}
+
+}

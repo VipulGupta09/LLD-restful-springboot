@@ -1,0 +1,25 @@
+import java.util.Collections;
+import java.util.PriorityQueue;
+
+public class Stone {
+
+	public static void main(String[] args) {
+		int arr[] = {3,4,5,7,7};
+		
+		PriorityQueue<Integer> maxHeap = new PriorityQueue(Collections.reverseOrder());
+		for(int i:arr)
+			maxHeap.add(i);
+		
+		while(maxHeap.size()!=1) {
+			int first = maxHeap.poll();
+			int second = maxHeap.poll();
+			
+			int val = Math.abs(first-second);
+			if(val>0)
+				maxHeap.add(val);
+		}
+		System.out.println(maxHeap.poll());
+
+	}
+
+}

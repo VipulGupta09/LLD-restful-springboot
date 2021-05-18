@@ -1,0 +1,9 @@
+package org.learn.java;
+
+public class Test {
+	public static void main(String[] ars) {
+		char ch = 0xface;
+		System.out.println(ch);
+		
+	}
+}

@@ -1,0 +1,9 @@
+package org.learn.java;
+
+public class Test {
+	public static void main(String[] ars) {
+		int b = 0b1111;
+		System.out.println(b);
+		
+	}
+}

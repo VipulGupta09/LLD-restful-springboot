@@ -1,0 +1,27 @@
+package com.learn.generics;
+
+class Gen<T> {
+	T obj;
+
+	Gen(T ojb) {
+		this.obj = obj;
+	}
+
+	public void show() {
+		System.out.println("The type of obj :" + obj.getClass().getName());
+	}
+
+	public T getObject() {
+		return obj;
+	}
+
+}
+
+public class Generics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.lru.algorithm;
+
+public class DoublyLinkedList<E> {
+	DoublyLinkedListNode<E> dummyHead;
+	DoublyLinkedListNode<E> dummyTail;
+
+	public DoublyLinkedList() {
+		this.dummyHead = new DoublyLinkedListNode<>(null);
+		this.dummyTail = new DoublyLinkedListNode<>(null);
+
+		dummyHead.next = dummyTail;
+		dummyTail.prev = dummyHead;
+	}
+
+	public void detachNode(DoublyLinkedListNode<E> node) {
+		if (node.prev != null)
+			node.prev.next = node.next;
+		else
+			dummyHead = node.next;
+
+		if (node.next != null)
+			node.next.prev = node.prev;
+		else
+			dummyTail = node.prev;
+
+	}
+
+}

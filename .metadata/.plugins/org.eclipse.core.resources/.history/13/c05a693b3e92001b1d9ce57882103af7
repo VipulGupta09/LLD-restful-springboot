@@ -1,0 +1,18 @@
+package org.learn.java;
+
+import java.util.Arrays;
+
+public class Test {
+	public static void main(String[] ars) {
+		double[] d = new double[5];
+		short s = 10;
+		byte b = 5;
+		float f = 10.5f;
+		d[0]=s;
+		d[1]=b;
+		d[2]=f;
+		
+		System.out.println(Arrays.toString(d));
+	}
+
+}

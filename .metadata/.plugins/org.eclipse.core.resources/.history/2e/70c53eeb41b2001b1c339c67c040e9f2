@@ -1,0 +1,10 @@
+package com.geeks.array;
+
+public class FindRepeatingNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

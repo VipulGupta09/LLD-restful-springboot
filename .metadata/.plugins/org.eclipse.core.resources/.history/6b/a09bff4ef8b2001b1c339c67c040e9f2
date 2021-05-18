@@ -1,0 +1,32 @@
+package com.geeks.array;
+
+import java.util.Arrays;
+
+public class SortArrayWaveForm {
+
+	public static void main(String[] args) {
+		int arr[] = { 10, 5, 6, 3, 2, 20, 100, 80 };
+
+	}
+
+	public static void sortWaveForm(int arr[]) {
+		for (int i = 0; i < arr.length; i = i + 2) {
+			if (i > 0) {
+				if (arr[i - 1] > arr[i]) {
+					swap(arr[i],arr[i-1]);
+				}
+			}
+			if(arr[i+1]<arr[i]) {
+				swap(arr[i],arr[i+1]);
+			}
+		}
+		System.out.println(Arrays.toString(arr));
+	}
+
+	public static void swap(int ele1, int ele2) {
+		int temp = ele1;
+		ele1 = ele2;
+		ele2 = temp;
+	}
+
+}

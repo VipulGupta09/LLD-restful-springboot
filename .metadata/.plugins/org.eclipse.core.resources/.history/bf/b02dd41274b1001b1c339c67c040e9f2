@@ -1,0 +1,34 @@
+package com.geeks.array;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class LongestConsecutiveSubsequence {
+
+	public static void main(String[] args) {
+		int arr[]= {100,4,200,1,3,2};
+
+	}
+	
+	public static void count(int arr[]) {
+		Set<Integer> set = new HashSet<Integer>();
+		int count = 0;
+		int result = 0;
+		for(int i:arr)
+			set.add(i);
+		
+		for(int i=0;i<arr.length;i++) {
+			count=0;
+			if(!set.contains(arr[i]-1)) {
+				int j = i;
+				while(!set.contains(arr[j]+1) && j<arr.length) {
+					j++;
+					count++;
+				}
+				result = Math.max(count, result);
+			}
+		}
+		System.out.println(result);
+	}
+
+}

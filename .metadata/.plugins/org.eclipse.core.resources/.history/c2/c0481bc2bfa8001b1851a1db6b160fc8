@@ -1,0 +1,17 @@
+import java.util.Collections;
+import java.util.PriorityQueue;
+
+public class Stone {
+
+	public static void main(String[] args) {
+		int arr[] = {3,4,5,7,7};
+		
+		PriorityQueue<Integer> maxHeap = new PriorityQueue(Collections.reverseOrder());
+		for(int i:arr)
+			maxHeap.add(i);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,63 @@
+import java.util.Collections;
+import java.util.PriorityQueue;
+
+class Node
+{
+    int data;
+    Node left, right;
+
+    Node(int item)
+    {
+        data = item;
+        left = right = null;
+    }
+}
+
+public class Stone {
+
+	public static void main(String[] args) {
+		Node node = new Node(10);
+		node.left = new Node(20);
+		node.left.left = new Node(10);
+		node.left.right = new Node(10);
+		node.right= new Node(30);
+		
+		
+	}
+	
+	boolean isSumTree(Node root)
+	{
+        if(root==null)
+            return true;
+         if(root.left==null && root.right==null)
+            return true;
+        if(root.left!=null||root.right==null)
+            return false;
+         if(root.left==null||root.right!=null)
+            return false;
+        
+        int sum = root.data;
+        int leftSum = sum(root.left,0);
+        int rightSum = sum(root.right,0);
+        
+        if(sum!=(leftSum+rightSum))
+            return false;
+        isSumTree(root.left);
+        isSumTree(root.right);
+        
+        return true;
+        
+	}
+	
+	public int sum(Node root,int sum){
+	    if(root==null)
+	        return 0;
+	    sum+=root.data;
+	    if(root.left!=null)
+	        sum(root.left,sum);
+	    if(root.right!=null)
+	       sum(root.right,sum);
+	   return sum;
+	}
+
+}

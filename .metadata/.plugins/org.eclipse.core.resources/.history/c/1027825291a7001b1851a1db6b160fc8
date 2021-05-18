@@ -1,0 +1,26 @@
+package com.lru.algorithm.storage;
+
+import com.lru.algorithm.exception.NotFoundException;
+import com.lru.algorithm.exception.StorageFullException;
+
+public class HashMapBasedStorage<Key, Value> implements Storage<Key, Value> {
+
+	@Override
+	public void add(Key key, Value value) throws StorageFullException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void remove(Key key) throws NotFoundException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void get(Key key) throws NotFoundException {
+		// TODO Auto-generated method stub
+
+	}
+
+}

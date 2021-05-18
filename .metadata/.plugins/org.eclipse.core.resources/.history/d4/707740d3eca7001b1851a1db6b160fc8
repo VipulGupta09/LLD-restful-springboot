@@ -1,0 +1,5 @@
+package com.lru.algorithm.cache;
+
+public class Cache {
+
+}

@@ -1,0 +1,11 @@
+package org.learn.java;
+
+import java.util.Arrays;
+
+public class Test {
+	int val;
+	public static void main(String[] ars) {
+		System.out.println(val);
+	}
+
+}

@@ -1,0 +1,9 @@
+package org.learn.java;
+
+public class Test {
+	public static void main(String[] ars) {
+		char ch = '\u0061';
+		System.out.println(ch);
+		
+	}
+}

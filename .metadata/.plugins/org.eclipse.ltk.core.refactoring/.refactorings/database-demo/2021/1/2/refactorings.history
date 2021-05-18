@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DatabaseDemoApplication.java&apos; to &apos;database-demo/src/main/java/com.learning.database.databasedemo&apos;&#x0D;&#x0A;- Original project: &apos;database-demo&apos;&#x0D;&#x0A;- Destination element: &apos;database-demo/src/main/java/com.learning.database.databasedemo&apos;&#x0D;&#x0A;- Original element: &apos;com.learning.database.databasedemo.DatabaseDemoApplication.java&apos;" description="Copy compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.learning.database.databasedemo" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.learning.database.databasedemo{DatabaseDemoApplication.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1610715173466" units="1" version="1.0"/>
+</session>

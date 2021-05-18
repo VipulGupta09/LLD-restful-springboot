@@ -1,0 +1,31 @@
+package com.geeks.array;
+
+import java.util.Arrays;
+
+public class CountPariWithSum {
+
+	public static void main(String[] args) {
+		int arr[]={10, 12, 10, 15, -1, 7, 6, 
+                5, 4, 2, 1, 1, 1};
+		countPairs(arr,11);
+	}
+	public static void countPairs(int arr[],int sum) {
+		Arrays.sort(arr);
+		int i =0, j = arr.length-1;
+		
+		while(i<j) {
+			int temp = arr[i]+arr[j];
+			if(temp==sum) {
+				System.out.println(arr[i]+" "+arr[j]);
+				j--;
+			}
+			else if(temp<sum) {
+				i++;
+			}
+			else {
+				j--;
+			}
+		}
+	}
+
+}

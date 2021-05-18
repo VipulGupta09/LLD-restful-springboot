@@ -1,0 +1,65 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class ConveryNumberInWords {
+	static HashMap<Integer, String> map = new HashMap<Integer, String>();
+	public static void main(String[] args) {
+		int num = 1413;
+		fillMap();
+		findWords(num);
+	}
+	
+	public static void findWords(int num) {
+		int count=1;
+		ArrayList<Integer> listOfNumber = new ArrayList<Integer>();
+		ArrayList<Integer> listOfDigitEquivalent = new ArrayList<Integer>();
+		while(num>0) {
+			int temp = num%10; //give us digit
+			num=num/10;  
+			listOfNumber.add(temp);
+			listOfDigitEquivalent.add(count);
+			count=count*10;
+		}
+		
+	}
+	
+	
+	public static void fillMap() {
+		map.put(0, "zero");
+		map.put(1, "one");
+		map.put(2, "two");
+		map.put(3, "three");
+		map.put(4, "four");
+		map.put(5, "five");
+		map.put(6, "six");
+		map.put(7, "seven");
+		map.put(8, "eight");
+		map.put(9, "nine");
+		map.put(10, "ten");
+		
+		map.put(11, "eleven");
+		map.put(12, "twelve");
+		map.put(13, "thirteen");
+		map.put(14, "fourteen");
+		map.put(15, "fifteen");
+		map.put(16, "sixteen");
+		map.put(17, "seventeen");
+		map.put(18, "eighteen");
+		map.put(19, "nineteen");
+		map.put(20, "twenty");
+		
+		map.put(30, "thrity");
+		map.put(40, "forty");
+		map.put(50, "fifty");
+		map.put(60, "sixty");
+		map.put(70, "seventy");
+		map.put(80, "eighty");
+		map.put(90, "ninty");
+		map.put(100, "hundreed");
+		map.put(1000, "thousand");
+		map.put(100000, "lakh");
+		map.put(10000000, "crore");
+		
+		
+	}
+}

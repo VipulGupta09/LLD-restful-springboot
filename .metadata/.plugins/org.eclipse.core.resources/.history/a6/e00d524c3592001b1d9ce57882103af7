@@ -1,0 +1,10 @@
+package org.learn.java;
+
+public class Test {
+	public static void main(String[] ars) {
+		int x = 010;
+		
+		System.out.println(x);
+		
+	}
+}

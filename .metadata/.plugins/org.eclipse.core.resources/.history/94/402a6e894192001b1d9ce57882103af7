@@ -1,0 +1,10 @@
+package org.learn.java;
+
+import java.util.Arrays;
+
+public class Test {
+	public static void main(String[] ars) {
+		int arr[][] = new int[4][3];
+	}
+
+}

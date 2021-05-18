@@ -1,0 +1,44 @@
+package com.geeks.array;
+
+public class MaximumSumPathInTwoArray {
+
+	public static void main(String[] args) {
+		int arr1[] = { 2, 3, 7, 10, 12 };
+		int arr2[] = { 1, 5, 7, 8 };
+		findMax(arr1, arr2);
+	}
+
+	public static void findMax(int arr1[], int arr2[]) {
+		int sum1 = 0;
+		int sum2 = 0;
+		int result = 0;
+		int i = 0, j = 0;
+		while (i < arr1.length && j < arr2.length) {
+			if (arr1[i] < arr2[j]) {
+				sum1+=arr1[i];
+				i++;
+			} else if (arr1[i] > arr2[j]) {
+				sum2+=arr2[j];
+				j++;
+			}
+			else {
+				result += Math.max(sum2, sum1);
+				sum1=sum2=0;
+				result+=arr1[i];
+				i++;
+				j++;
+				
+			}
+
+		}
+		while(i<arr1.length) {
+			result+=arr1[i];
+			i++;
+		}
+		while(j<arr2.length) {
+			result+=arr2[j];
+			j++;
+		}
+		System.out.println(result);
+	}
+}

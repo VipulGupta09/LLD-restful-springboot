@@ -1,0 +1,10 @@
+package org.learn.java;
+
+public class PilesOfBoxes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

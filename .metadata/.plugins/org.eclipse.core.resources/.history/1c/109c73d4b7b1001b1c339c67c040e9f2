@@ -1,0 +1,51 @@
+package com.geeks.array;
+
+import java.util.Arrays;
+import java.util.PriorityQueue;
+
+public class MinimiseTheMaximumDifferenceBetweenHeights {
+
+	public static void main(String[] args) {
+		int arr[]={1, 5, 10};
+		int k = 6;
+		findDiff(arr, k);
+	}
+	
+	// 1 5 10
+	// small = 4, big = 6
+	public static int findDiff(int arr[], int k) {
+		if(arr.length==1)
+			return 0;
+		Arrays.sort(arr);
+		
+		int ans = arr[arr.length-1]-arr[0];
+		
+		int small = arr[0]+k;
+		int big  =  arr[arr.length-1]+k;
+		
+		if(small>big) {
+			int temp = big;
+			big = small;
+			small = temp;
+		}
+		
+		for(int i=1;i<arr.length;i++) {
+			int sub = arr[i]-k; // -1
+			int add = arr[i]+k; // 11
+			
+			if(sub>=small || add<=big)
+				continue;
+			
+			if(big - sub <=add-small) { // 7 <=7
+				small = sub;
+			}
+			else
+				big = add;
+			
+		}
+		return Math.min(ans	, big-small);
+		
+		
+	}
+
+}

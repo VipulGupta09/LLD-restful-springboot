@@ -1,0 +1,14 @@
+package org.learn.java;
+
+public class Test {
+	public static void main(String[] ars) {
+		sum(new int[] {1,2,3});
+	}
+	public static void sum(int[]arr) {
+		int sum=0;
+		for(int i : arr) {
+			 sum+=i;
+		}
+		System.out.println(sum);
+	}
+}

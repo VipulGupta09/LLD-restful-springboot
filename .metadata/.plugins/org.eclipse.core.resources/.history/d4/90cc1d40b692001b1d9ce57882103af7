@@ -1,0 +1,33 @@
+package org.learn.java;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.PriorityQueue;
+
+public class PilesOfBoxes {
+
+	public static void main(String[] args) {
+		int[] arr = {5,2,1};
+		int n = 3;
+		find(arr, n);
+	}
+	
+	public static void find(int arr[],int n) {
+		PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(Collections.reverseOrder());
+		for(int i:arr)
+			maxHeap.add(i);
+		int count =0;
+		while(maxHeap.size()!=1) {
+			int first = maxHeap.peek();
+			int second = maxHeap.peek();
+			if(first>second) {
+				maxHeap.poll();
+				maxHeap.add(second);
+				count++;
+			}
+			
+		}
+		System.out.println(count);
+	}
+
+}
